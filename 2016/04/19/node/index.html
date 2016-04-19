@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>node | 无痕岁月</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="第一天 node.js的基础知识
+node.js的简介Node.js是一个基于==Chrome JavaScript==运行时建立的平台，用于方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用==事件驱动==， ==非阻塞I/O== 模型而得以==轻量==和==高效==，非常适合在分布式设备上运行的数据密集型的实时应用。
+node.js的版本说明node.js目前有两个版本 一个是长期">
+<meta property="og:type" content="article">
+<meta property="og:title" content="node">
+<meta property="og:url" content="http://chenggang.win/2016/04/19/node/index.html">
+<meta property="og:site_name" content="无痕岁月">
+<meta property="og:description" content="第一天 node.js的基础知识
+node.js的简介Node.js是一个基于==Chrome JavaScript==运行时建立的平台，用于方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用==事件驱动==， ==非阻塞I/O== 模型而得以==轻量==和==高效==，非常适合在分布式设备上运行的数据密集型的实时应用。
+node.js的版本说明node.js目前有两个版本 一个是长期">
+<meta property="og:updated_time" content="2016-04-19T12:29:52.099Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="node">
+<meta name="twitter:description" content="第一天 node.js的基础知识
+node.js的简介Node.js是一个基于==Chrome JavaScript==运行时建立的平台，用于方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用==事件驱动==， ==非阻塞I/O== 模型而得以==轻量==和==高效==，非常适合在分布式设备上运行的数据密集型的实时应用。
+node.js的版本说明node.js目前有两个版本 一个是长期">
+  
+    <link rel="alternative" href="/atom.xml" title="无痕岁月" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/avatar.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Heng</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						
+						<li>About</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/heng1025/heng1025.github.io" title="github">github</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Heng</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/img/avatar.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Heng</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/heng1025/heng1025.github.io" title="github">github</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-node" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/19/node/" class="article-date">
+  	<time datetime="2016-04-19T12:20:42.000Z" itemprop="datePublished">2016-04-19</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      node
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="第一天-node-js的基础知识"><a href="#第一天-node-js的基础知识" class="headerlink" title="第一天 node.js的基础知识"></a>第一天 node.js的基础知识</h2><ol>
+<li><strong>node.js的简介</strong><br>Node.js是一个基于==Chrome JavaScript==运行时建立的平台，用于方便地搭建响应速度快、易于扩展的网络应用。<br>Node.js 使用==事件驱动==， ==非阻塞I/O== 模型而得以==轻量==和==高效==，非常适合在分布式设备上运行的数据密集型的实时应用。</li>
+<li><strong>node.js的版本说明</strong><br>node.js目前有两个版本 一个是长期支持版,目前最新版本是的==4.4.2==；另一个是稳定版，最新版本是==5.10.0==。</li>
+<li><strong>node.jsd开发环境配置</strong></li>
+</ol>
+<ul>
+<li>在进行node开发之前必须配置node的开发环境，首先在node.js的官网上下载node.js的安装包，下载地址<code>https://nodejs.org/en/</code>.安装后，node.js会默认添加到==环境变量==。安装完成之后在控制台下输入<code>node -v</code>会得到以下结果。<br>v4.4.0</li>
+<li>当我们安装完后node后，node自带一个包管理工具==npm==,node package  manager(node.js的包管理工具)。npm的官网<code>https://www.npmjs.com/</code>.npm是全球最大的开源库系统。</li>
+<li>由于node.js的版本更新比较快，变化也比较大，node.js的官方也考虑到了这一点，故当我们安装好了之后，我们可以在npm的官网上下载一个模块==nvm==,它是专门用来管理node.js的版本。<ul>
+<li>nvm的使用说明：所有的操作均在操作系统的控制台下进行。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nvm ls                 用来查看node.js版本列表</span><br><span class="line">nvm use node的版本号   用来切换node的版本</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>总结</strong></p>
+<ul>
+<li>在正式学习node之前必须配置好node的环境，以致于在后续的学习中能够专注于自己的代码。</li>
+<li>在学习之前务必搞清楚node ，npm, nvm 是什么，怎么用，最有效的方式就是查看它们的官网。</li>
+</ul>
+
+      
+    </div>
+    
+  </div>
+  
+    
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="node" data-title="node" data-url="http://chenggang.win/2016/04/19/node/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Heng
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
